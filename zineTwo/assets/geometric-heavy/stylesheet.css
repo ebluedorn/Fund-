@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Geometr231 Hv BT';
+    src: url('Geometric231BT-HeavyC.eot');
+    src: local('Geometric 231 Heavy BT'), local('Geometric231BT-HeavyC'),
+        url('Geometric231BT-HeavyC.eot?#iefix') format('embedded-opentype'),
+        url('Geometric231BT-HeavyC.woff2') format('woff2'),
+        url('Geometric231BT-HeavyC.woff') format('woff'),
+        url('Geometric231BT-HeavyC.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

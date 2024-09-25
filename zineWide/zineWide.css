@@ -273,13 +273,14 @@ article ol li {
 }
 
 @media screen and (max-width: 767px) {
-  body {
-    margin-top:0;
-  }
   
   /* font size adjustments */
   .text p, h2 {
-    font-size:20px;
+    font-size: 20px;
+  }
+
+  .zine-nav a p {
+    font-size: 24px;
   }
 
   .hero {
@@ -289,9 +290,13 @@ article ol li {
     margin-bottom: 2rem;
   }
 
-  main {
+  section, footer {
     margin-left: 5%;
     margin-right: 5%;
+  }
+  
+  .zine-nav {
+    display: block;
   }
 
   .bestpractices .headline, ol li {
