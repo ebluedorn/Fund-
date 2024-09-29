@@ -1,0 +1,179 @@
+/* https://coolors.co/user/palettes/661196ed653045000b3e5386 */
+/**
+
+#390099
+#9E0059
+#FF0054
+#FF5400
+#FFBD00
+
+*/
+
+@font-face {
+    font-family: 'Geometr231 Hv BT';
+    src: url('./assets/geometric-heavy/Geometric231BT-HeavyC.eot');
+    src:
+        local('./assets/geometric-heavy/Geometric 231 Heavy BT'), 
+        local('./assets/geometric-heavy/Geometric231BT-HeavyC'),
+        url('./assets/geometric-heavy/Geometric231BT-HeavyC.eot?#iefix') format('embedded-opentype'),
+        url('./assets/geometric-heavy/Geometric231BT-HeavyC.woff2') format('woff2'),
+        url('./assets/geometric-heavy/Geometric231BT-HeavyC.woff') format('woff'),
+        url('./assets/geometric-heavy/Geometric231BT-HeavyC.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  color: black;
+  background-color: #ffbd00;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+}
+
+header {
+  margin-bottom: 3em;
+}
+
+a {
+  color: #FF0054;
+}
+
+#kff-map {
+  width: 100%;
+  background: linear-gradient(
+    180deg, 
+    rgba(255,189,0,1) 0%, 
+    rgba(255,255,255,1) 20%, 
+    rgba(255,255,255,1) 80%, 
+    rgba(255,189,0,1) 100%
+  ); 
+}
+
+.image-wrapper {
+  width: 100%;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background: linear-gradient(
+    180deg, rgba(255,189,0,1) 0%, 
+    rgba(158,0,89,1) 20%, 
+    rgba(158,0,89,1) 80%, 
+    rgba(255,189,0,1) 100%
+  ); 
+}
+
+.quote {
+  color: #ffbd00;
+  padding: 10%;
+  font-size: 5em;
+  font-family: 'Geometr231 Hv BT';
+  background: linear-gradient(
+    180deg, 
+    rgba(255,189,0,1) 0%, 
+    rgba(158,0,89,1) 50%, 
+    rgba(255,189,0,1) 100%
+  );
+}
+
+.quote-left {
+  text-align: left;
+}
+
+.quote-right {
+  text-align: right;
+}
+
+.zine-nav a {
+  color: #390099;
+  outline: solid 2px #390099;
+}
+
+.zine-nav a:hover {
+  background-color: #a080ff;
+}
+
+.zine-nav a.selected-zine {
+  color: #9E0059;
+  outline: solid 2px #9E0059;
+  background-color: #d4a6c0;
+}
+
+.jump {
+  color: #390099;
+  outline: solid 2px #390099;
+}
+
+.jump:hover {
+  background-color: #a080ff;
+}
+
+.title {
+  /* font-family: 'Geometr231 Hv BT'; */
+  border-bottom: 2px solid #390099;
+  padding-bottom: 10px;
+  font-size: 36px;
+  color: #390099;
+  margin-bottom: 45px;
+}
+
+.fundheadline {
+  background-color: #FF0054;
+  color: white;
+}
+
+.fundaction {
+  border: solid #FF0054 2px;
+}
+
+/* (C) TAB LABEL */
+.tab label {
+  color: rgb(255, 255, 255);
+  background-color: #390099;
+}
+
+/* (D) TAB CONTENT */
+.tab .tab-content {
+  background-color: #ad7eff;
+}
+
+/* footnote styles? trying to adjust */
+.tab ol li{
+  color: #FF5400;
+}
+
+article ol li {
+  color: #FF5400;
+}
+
+article ol li a {
+  color: #FF5400;
+}
+
+sup a {
+  color: #FF5400; /* 5 */
+  margin: 2px;
+}
+
+a.fn-return {
+  color: #FF5400; /* 5 */
+}
+
+#endnotes ul {
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+}
+
+#endnotes a {
+  color: #9E0059;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    margin-top: 5px;
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+}
