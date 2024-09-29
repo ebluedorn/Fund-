@@ -66,22 +66,25 @@ a {
 .quote {
   color: #ffbd00;
   padding: 10%;
-  font-size: 5em;
+  font-size: 3em;
   font-family: 'Geometr231 Hv BT';
   background: linear-gradient(
     180deg, 
     rgba(255,189,0,1) 0%, 
-    rgba(158,0,89,1) 50%, 
+    rgba(158,0,89,1) 25%, 
+    rgba(158,0,89,1) 75%, 
     rgba(255,189,0,1) 100%
   );
 }
 
 .quote-left {
   text-align: left;
+  padding-right: 23%;
 }
 
 .quote-right {
   text-align: right;
+  padding-left: 23%;
 }
 
 .zine-nav a {
@@ -115,6 +118,16 @@ a {
   font-size: 36px;
   color: #390099;
   margin-bottom: 45px;
+}
+
+.article-title {
+  margin-top: 25px;
+  color: #390099;
+  font-size: 24px;
+}
+
+.hero {
+  color:#FF0054;
 }
 
 .fundheadline {
@@ -159,12 +172,12 @@ a.fn-return {
   color: #FF5400; /* 5 */
 }
 
-#endnotes ul {
+#addlresources ul, #endnotes ul {
   padding-inline-start: 40px;
   padding-inline-end: 40px;
 }
 
-#endnotes a {
+#addlresources a, #endnotes a {
   color: #9E0059;
 }
 

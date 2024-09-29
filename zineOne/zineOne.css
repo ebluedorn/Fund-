@@ -51,13 +51,7 @@ header h2 a:hover {
  
 /* ABOUT TEXT */
 .hero {
-  text-align: center;
   color: #31a9edff;
-  font-size: 28px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 5rem;
 }
 
 .hero a {

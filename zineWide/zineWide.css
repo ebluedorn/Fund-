@@ -99,6 +99,15 @@ section, footer {
   outline-width: 2px;
 }
 
+.hero, .hero p {
+  text-align: center;
+  font-size: 28px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 5rem;
+}
+
 .bestpractices {
   display: block;
   color: black;
