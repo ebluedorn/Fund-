@@ -159,6 +159,15 @@ a.fn-return {
   color: #FF5400; /* 5 */
 }
 
+#endnotes ul {
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+}
+
+#endnotes a {
+  color: #9E0059;
+}
+
 @media screen and (max-width: 767px) {
   body {
     margin-top: 5px;
