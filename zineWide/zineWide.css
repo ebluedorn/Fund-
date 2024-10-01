@@ -1,0 +1,360 @@
+p, ol li, ul li, h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+}
+
+li a {
+  text-decoration: underline;
+}
+
+.fn-return {
+  text-decoration: none;
+}
+
+ol {
+  margin-top: 10px;
+  padding: 0px;
+  list-style: decimal inside;
+}
+
+ul {
+  margin: 0px;
+  padding-inline-start: 15px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+ol li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+body {
+  margin-top: 3rem;
+  font-family: 'DM Sans', sans-serif; 
+}
+
+a {
+  color: black;
+}
+
+header {
+  text-align: center;
+}
+
+section, footer {
+  margin-left: 23%;
+  margin-right: 23%;
+}
+
+.zine-nav {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.zine-nav a {
+  text-decoration: none;
+  text-align: center;
+  outline: solid 2px;
+  padding: 20px 70px;
+  border-radius: 9px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.zine-nav a p {
+  font-size: 36px;
+  margin: 0px;
+}
+
+.zine-nav a.selected-zine:hover {
+  cursor: default;
+}
+
+/* INDEX */
+.nav-button {
+  display: block;
+  margin-bottom: 4rem;
+}
+
+.nav-button a {
+  text-decoration: none;
+}
+
+.jump {
+  text-align: center;
+  padding: 20px;
+  border-radius: 9px;
+  font-size: 36px;
+  margin-bottom: 15px;
+  display: block;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.hero, .hero p {
+  text-align: center;
+  font-size: 28px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 5rem;
+}
+
+.bestpractices {
+  display: block;
+  color: black;
+  background-color: none;
+  padding-bottom: 5px;
+}
+
+.bestpractices .headline {
+  font-size: 20px;
+}
+
+.fundaction {
+  margin-bottom: 15px;
+}
+
+.fundheadline {
+  padding: 10px 15px;
+  font-size: 28px;
+}
+
+.funding .title {
+  color: #09a370ff;
+}
+
+.funding img {
+  width: 100%;
+}
+
+.funding .text p {
+  width: 100%;
+}
+
+.funding .text .action {
+  display: block;
+  font-size: 20px;
+  outline: solid 2px #09a370ff;
+  color:#09a370ff;
+  padding: 10px 15px;
+  margin: 15px 3px 10px 3px;
+  text-decoration: none;
+}
+
+.tracking {
+  font-size: 20px;
+}
+
+/* (A) TABS CONTAINER */
+.tab {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* (B) HIDE CHECKBOX */
+.tab input { display: none; }
+
+/* (C) TAB LABEL */
+.tab label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size:30px;
+  border-radius: 9px;
+}
+
+/* (D) TAB CONTENT */
+.tab .tab-content {
+  /* CSS ANIMATION WILL NOT WORK WITH AUTO HEIGHT */
+  /* THIS IS WHY WE USE MAX-HEIGHT INSTEAD */
+  overflow: scroll;
+  transition: max-height 0.3s;
+  max-height: 0;
+  display: block;
+  margin-top: 10px;
+  border-radius: 9px;
+}
+
+.tab-content h3 {
+  margin-left: 21px;
+}
+
+.tab-content ol li {
+  margin-left: 40px;
+}
+
+.orgs {
+  margin: 21px 21px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tab .tab-content img {
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* (E) OPEN TAB ON CHECKED */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+/* (F) EXTRA - ADD ARROW INDICATOR */
+.tab label::after {
+  content: "\002B";
+  right: 10px;
+  top: 10px;
+  display: block;
+  transition: all 0.4s;
+  margin-right:1rem;
+}
+
+.tab input:checked ~ label::after { 
+  content: "\2013"; 
+}
+
+.tab ol li {
+  font-size:16px;
+}
+
+/* Initializing a footnote counter on the wrapper */
+body {
+  counter-reset: footnotes;
+}
+
+article ol li {
+  font-size: 10px;
+}
+
+/**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+
+[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+}
+
+/**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+[aria-describedby="footnote-label"]::after {
+  content: '' counter(footnotes) ''; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.75em; /* 3 */
+  margin-left: 2px; /* 4 */
+  text-decoration: none; /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+/**
+ * Resetting the default focused styles on the number
+ */
+[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+[aria-label="Back to content"] {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 767px) {
+  
+  /* font size adjustments */
+  .text p, h2 {
+    font-size: 20px;
+  }
+
+  .zine-nav a p {
+    font-size: 24px;
+  }
+
+  .hero {
+    font-size: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  section, footer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .zine-nav {
+    display: block;
+  }
+
+  .bestpractices .headline, ol li {
+    font-size: 20px;
+  }
+
+  .title, .jump {
+    font-size: 24px;
+  }
+
+  .fundheadline {
+    font-size: 20px;
+  }
+
+  .action {
+    margin: 2px;
+  }
+
+  .resourcelist h3 {
+    margin: 21px;
+  }
+
+  .resourcelist ul {
+    margin: 21px;
+    padding: 0;
+  }
+
+  .logos {
+    vertical-align: center;
+    margin-top:2em;
+  }
+
+  .socials {
+    text-align: center;
+  }
+    
+  .tab-content ul {
+    margin-left: 40px;
+  }
+
+  .tab .tab-content {
+    display: block;
+    height: auto;
+  }
+
+  .tab .tab-content img {
+    display: block;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

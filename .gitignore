@@ -1,0 +1,3 @@
+# Files that shouldn't be committed!
+# Mac-specific stuff
+.DS_Store

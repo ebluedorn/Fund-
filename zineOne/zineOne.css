@@ -1,0 +1,220 @@
+body {
+  color: black;
+  background-color: rgb(255, 252, 235);
+}
+
+.fullwidth h2 {
+  color: #09a370ff;
+}
+
+/* ARROW + LOGO +PDF */
+header h1 a {
+  color: #09a370ff;
+}
+
+header h2 a {
+  padding:10px 15px;
+  border: 2px solid #31a9edff;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;   
+  color: #31a9edff;
+}
+
+header h2 a:hover {  
+  background-color: rgba(49, 168, 237, 0.164);
+}
+
+.zine-nav a {
+  color: #09a370ff;
+  outline: solid 2px #09a370ff;
+}
+
+.zine-nav a:hover {
+  background-color: rgba(9, 163, 112, 0.158);
+}
+
+.zine-nav a.selected-zine {
+  color: #31a9edff;
+  outline: solid 2px #31a9edff;
+  background-color: #b6ddf3;
+}
+
+.fundheadline {
+  background-color: #f95421ff;
+  color: white;
+}
+
+.fundaction {
+  border: solid #f95421ff 2px;
+}
+ 
+/* ABOUT TEXT */
+.hero {
+  color: #31a9edff;
+}
+
+.hero a {
+  text-decoration: underline;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero a {
+  color: #31a9edff;
+}
+
+/* INDEX */
+.jump {
+  color: #09a370ff;
+  outline-color: #09a370ff;
+}
+
+.jump:hover {
+  background-color: rgba(9, 163, 112, 0.158);
+}
+
+.title {
+  border-bottom: 2px solid #09a370ff;
+  padding-bottom: 10px;
+  font-size: 36px;
+  color: #09a370ff;
+  margin-bottom: 45px;
+}
+
+.bestpractices {
+  display: block;
+  color: black;
+  background-color: none;
+  padding-bottom: 5px;
+}
+
+.bestpractices .headline {
+  font-size: 20px;
+}
+
+.bestpractices ul {
+  margin-left: 0px;
+  padding-inline-start: 15px;
+}
+
+.funding .title {
+  color: #09a370ff;
+}
+
+.funding img {
+  width: 100%;
+}
+
+.funding .text p {
+  width: 100%;
+}
+
+.funding .text .action {
+  display: block;
+  font-size: 20px;
+  outline: solid 2px #09a370ff;
+  color:#09a370ff;
+  padding: 10px 15px;
+  margin: 15px 3px 10px 3px;
+  text-decoration: none;
+}
+
+.action:hover {
+  background-color: rgba(49, 168, 237, 0.164);
+}
+
+.othersteps a {
+  text-decoration: none;
+}
+
+/* (C) TAB LABEL */
+.tab label {
+  color: rgb(255, 255, 255);
+  background-color: #31a9edff;
+}
+
+/* (D) TAB CONTENT */
+.tab .tab-content {
+  /* CSS ANIMATION WILL NOT WORK WITH AUTO HEIGHT */
+  /* THIS IS WHY WE USE MAX-HEIGHT INSTEAD */
+  background-color: rgba(9, 163, 112, 0.158);
+}
+
+.resourcelist a {
+  color:#09a370ff;
+}
+
+.giving a {
+  color: #f95421ff;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.tracking a {
+  color: #f95421ff;
+}
+
+::selection {
+  background: #fff1b6ff; 
+}
+
+/* footnote styles? trying to adjust */
+.tab ol li{
+  color: #f95421ff;
+}
+
+article ol li {
+  color: #f95421ff;
+}
+
+article ol li a {
+  color: #f95421ff;
+}
+
+sup a {
+  color: #f95421ff; /* 5 */
+  margin: 2px;
+}
+
+a.fn-return {
+  color: #f95421ff; /* 5 */
+}
+
+[aria-describedby="footnote-label"]::after {
+  color: #f95421ff; /* 5 */
+}
+
+[aria-label="Back to content"] {
+  color:#f95421ff;
+}
+
+/**
+ * Visually hidden yet accessible content
+ */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* SAMPLE SCROLL */
+.timeline {
+  overflow: scroll;
+  outline: solid 2px #09a370ff;
+  margin-bottom: 4em;
+}
+
+.timeline img {
+  height:700px;
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    margin-top:0;
+  }
+}
